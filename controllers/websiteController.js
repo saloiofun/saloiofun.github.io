@@ -2,31 +2,32 @@ const db = require('../models')
 
 // Defining methods for the Controller
 module.exports = {
-  findWebsiteById: function (req, res) {
+  findById: function (req, res) {
     db.Website
       .findById({_id: req.params.id})
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err))
   },
-  findWebsiteAll: function (req, res) {
+  findAll: function (req, res) {
     db.Website
       .find({})
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err))
   },
-  createWebsite: function (req, res) {
+  create: function (req, res) {
     db.Website
       .create(req.body)
       .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err))
+      .catch(err => console.log(err))
+      // res.status(422).json(err))
   },
-  updateWebsite: function (req, res) {
+  update: function (req, res) {
     db.Website
       .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err))
   },
-  deleteWebsite: function (req, res) {
+  delete: function (req, res) {
     db.Website
       .findById({ _id: req.params.id })
       .then(dbModel => dbModel.remove())

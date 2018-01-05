@@ -1,15 +1,15 @@
 const router = require('express').Router()
 const controller = require('../../controllers/websiteController')
 
-// Matches with "/api/websites"
+// Matches with "/api/website"
 router.route('/')
-  .get(controller.findWebsiteAll)
-  .post(controller.createWebsite)
+  .get(controller.findAll)
+  .post(controller.create)
 
-// Matches with "/api/websites/:id"
+// Matches with "/api/website/:id"
 router.route('/:id')
-  .get(controller.findWebsiteById)
-  .put(controller.updateWebsite)
-  .delete(controller.deleteWebsite)
+  .get(controller.findById)
+  .put(controller.update)
+  .delete(controller.delete)
 
 module.exports = router

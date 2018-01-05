@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const websiteSchema = new Schema({
+const WebsiteSchema = new Schema({
   title: {
     type: String,
     required: true
@@ -27,6 +27,6 @@ const websiteSchema = new Schema({
   }
 })
 
-const Website = mongoose.model('Website', websiteSchema)
+const Website = mongoose.model('Website', WebsiteSchema)
 
 module.exports = Website
