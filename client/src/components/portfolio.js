@@ -1,66 +1,83 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from 'material-ui/styles'
-import Paper from 'material-ui/Paper'
 import Typography from 'material-ui/Typography'
-import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card'
-import Button from 'material-ui/Button'
+import { GridList, GridListTile } from 'material-ui/GridList'
 
 const styles = theme => ({
-  root: theme.mixins.gutters({
-    paddingTop: 16,
-    paddingBottom: 16,
-    marginTop: theme.spacing.unit * 3
-  }),
-  card: {
-    maxWidth: 345
+  images: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden'
   },
-  media: {
-    height: 200
+  subheader: {
+    width: '100%'
   }
 })
 
-function PaperSheet (props) {
+const tileData = [
+  {
+    img: 'http://lorempixel.com/200/220/sports/',
+    title: 'Image',
+    author: 'author',
+    cols: 2
+  },
+  {
+    img: 'http://lorempixel.com/300/220/sports/',
+    title: 'Image',
+    author: 'author',
+    cols: 1
+  },
+  {
+    img: 'http://lorempixel.com/370/150/sports/',
+    title: 'Image',
+    author: 'author',
+    cols: 1
+  },
+  {
+    img: 'http://lorempixel.com/400/200/sports/',
+    title: 'Image',
+    author: 'author',
+    cols: 1
+  },
+  {
+    img: 'http://lorempixel.com/300/200/sports/',
+    title: 'Image',
+    author: 'author',
+    cols: 1
+  },
+  {
+    img: 'http://lorempixel.com/600/110/sports/',
+    title: 'Image',
+    author: 'author',
+    cols: 3
+  }
+]
+
+function Portfolio (props) {
   const { classes } = props
+
   return (
-    <div>
-      <Typography type='display2' component='h3'>
-          Portfolio
-        </Typography>
-      <Paper className={classes.root} elevation={4}>
-        <div>
-          <Card className={classes.card}>
-            <CardMedia
-              className={classes.media}
-              image='/static/images/cards/contemplative-reptile.jpg'
-              title='Contemplative Reptile'
-          />
-            <CardContent>
-              <Typography type='headline' component='h2'>
-              Lizard
-            </Typography>
-              <Typography component='p'>
-              Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-              across all continents except Antarctica
-            </Typography>
-            </CardContent>
-            <CardActions>
-              <Button dense color='primary'>
-              Share
-            </Button>
-              <Button dense color='primary'>
-              Learn More
-            </Button>
-            </CardActions>
-          </Card>
-        </div>
-      </Paper>
+    <div className={classes.root}>
+      <Typography type='display2' align='left' gutterBottom='true'>
+        Portfolio
+      </Typography>
+      <div className={classes.images}>
+        <GridList cellHeight={260} className={classes.gridList} cols={3}>
+          {tileData.map(tile => (
+            <GridListTile key={tile.img} cols={tile.cols || 1}>
+              <img src={tile.img} alt={tile.title} />
+            </GridListTile>
+        ))}
+        </GridList>
+      </div>
     </div>
   )
 }
 
-PaperSheet.propTypes = {
+Portfolio.propTypes = {
   classes: PropTypes.object.isRequired
 }
 
-export default withStyles(styles)(PaperSheet)
+export default withStyles(styles)(Portfolio)
