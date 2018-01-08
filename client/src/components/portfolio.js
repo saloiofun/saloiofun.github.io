@@ -5,6 +5,9 @@ import Typography from 'material-ui/Typography'
 import { GridList, GridListTile } from 'material-ui/GridList'
 
 const styles = theme => ({
+  root: {
+    marginBottom: theme.spacing.unit * 8
+  },
   images: {
     display: 'flex',
     flexWrap: 'wrap',
@@ -59,7 +62,7 @@ function Portfolio (props) {
   const { classes } = props
 
   return (
-    <div className={classes.root}>
+    <div>
       <Typography type='display2' align='left' gutterBottom='true'>
         Portfolio
       </Typography>

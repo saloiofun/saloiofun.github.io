@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import Reboot from 'material-ui/Reboot'
+import Divider from 'material-ui/Divider'
 import { withStyles } from 'material-ui/styles'
 import Navbar from './components/navbar'
 import Vcard from './components/vcard'
 import Resume from './components/resume'
 import Portfolio from './components/portfolio'
+import WorkExperience from './components/workExperience'
+import Education from './components/education'
 
 const styles = theme => ({
   root: {
@@ -15,7 +18,11 @@ const styles = theme => ({
   container: {
     maxWidth: 1000,
     padding: theme.spacing.unit * 3,
-    margin: '0 auto'
+    margin: '0 auto',
+    marginBottom: theme.spacing.unit * 10
+  },
+  divider: {
+    marginBottom: theme.spacing.unit * 5
   }
 })
 
@@ -30,6 +37,10 @@ class App extends Component {
           <Vcard />
           <Resume />
           <Portfolio />
+          <div className={classes.divider} />
+          <WorkExperience />
+          <div className={classes.divider} />
+          <Education />
         </div>
       </div>
     )
