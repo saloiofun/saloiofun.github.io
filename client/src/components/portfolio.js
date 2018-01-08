@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from 'material-ui/styles'
 import Typography from 'material-ui/Typography'
-import { GridList, GridListTile } from 'material-ui/GridList'
+import { GridList, GridListTile, GridListTileBar } from 'material-ui/GridList'
 
 const styles = theme => ({
   root: {
@@ -19,37 +19,51 @@ const styles = theme => ({
     left: '50%',
     position: 'relative',
     transform: 'translateX(-50%)'
+  },
+  title: {
+    fontWeight: 500,
+    fontSize: '1.5rem'
+  },
+  titleBar: {
+    background:
+      'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)'
   }
 })
 
 const tileData = [
   {
     img: 'static/images/evitehub-min.png',
+    title: 'EviteHub',
     url: 'https://github.com/saloiofun/EviteHub',
     cols: 1
   },
   {
     img: 'static/images/gifstatic-min.png',
+    title: 'GifTastic',
     url: 'https://github.com/saloiofun/GifTastic',
     cols: 1
   },
   {
     img: 'static/images/rpg-min.png',
+    title: 'RPG-Game',
     url: 'https://github.com/saloiofun/RPG-game',
     cols: 1
   },
   {
     img: 'static/images/hangman-min.png',
+    title: 'Hangman',
     url: 'https://github.com/saloiofun/Hangman-Game',
     cols: 1
   },
   {
     img: 'static/images/trivia-min.png',
+    title: 'TriviaGame',
     url: 'https://github.com/saloiofun/TriviaGame',
     cols: 1
   },
   {
     img: 'static/images/rps-min.png',
+    title: 'RPS-Game',
     url: 'https://github.com/saloiofun/RPS-Multiplayer',
     cols: 1
   }
@@ -71,6 +85,13 @@ function Portfolio (props) {
               <div style={{height: '100%'}}>
                 <a href={tile.url} target='_blank'>
                   <img className={classes.image} src={tile.img} alt={tile.title} />
+                  <GridListTileBar
+                    title={tile.title}
+                    classes={{
+                      root: classes.titleBar,
+                      title: classes.title
+                    }}
+                  />
                 </a>
               </div>
             </GridListTile>
