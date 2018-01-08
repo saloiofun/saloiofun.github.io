@@ -47,7 +47,7 @@ const tileData = [
   },
   {
     icon: Reactjs,
-    skill: 'React.js'
+    skill: 'ReactJS'
   },
   {
     icon: Database,
