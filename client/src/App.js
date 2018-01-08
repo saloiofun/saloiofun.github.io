@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Reboot from 'material-ui/Reboot'
-import Divider from 'material-ui/Divider'
 import { withStyles } from 'material-ui/styles'
 import Navbar from './components/navbar'
 import Vcard from './components/vcard'
@@ -8,6 +7,7 @@ import Resume from './components/resume'
 import Portfolio from './components/portfolio'
 import WorkExperience from './components/workExperience'
 import Education from './components/education'
+import Interests from './components/interests'
 
 const styles = theme => ({
   root: {
@@ -41,6 +41,8 @@ class App extends Component {
           <WorkExperience />
           <div className={classes.divider} />
           <Education />
+          <div className={classes.divider} />
+          <Interests />
         </div>
       </div>
     )

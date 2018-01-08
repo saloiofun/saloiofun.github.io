@@ -15,6 +15,7 @@ const styles = theme => ({
     borderLeftColor: '#00897b',
     borderLeft: '3px solid',
     paddingTop: theme.spacing.unit,
+    paddingBottom: theme.spacing.unit * 2,
     paddingLeft: theme.spacing.unit * 2
   }
 })
