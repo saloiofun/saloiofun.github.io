@@ -82,7 +82,7 @@ function ProfessionalSkills (props) {
       </Typography>
       <Paper className={classes.root} elevation={4}>
         <Typography gutterBottom>
-          For each ad campaign that you create, you can control how much you're willing to spend on clicks and conversions, which networks and geographical locations you want your ads to show on, and more.
+          I’m constantly learning and polishing my coding style. You can see a more extended list of my professional skills in my Resume. Below are the tools that I’ve been using lately.
         </Typography>
         <div className={classes.ProfessionalSkills}>
           <Grid container spacing={24} justify='center'>
