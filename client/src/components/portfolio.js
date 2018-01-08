@@ -24,32 +24,32 @@ const styles = theme => ({
 
 const tileData = [
   {
-    img: 'static/images/evitehub.png',
+    img: 'static/images/evitehub-min.png',
     url: 'https://github.com/saloiofun/EviteHub',
     cols: 1
   },
   {
-    img: 'static/images/gifstatic.png',
+    img: 'static/images/gifstatic-min.png',
     url: 'https://github.com/saloiofun/GifTastic',
     cols: 1
   },
   {
-    img: 'static/images/rpg.png',
+    img: 'static/images/rpg-min.png',
     url: 'https://github.com/saloiofun/RPG-game',
     cols: 1
   },
   {
-    img: 'static/images/hangman.jpg',
+    img: 'static/images/hangman-min.png',
     url: 'https://github.com/saloiofun/Hangman-Game',
     cols: 1
   },
   {
-    img: 'static/images/trivia.jpg',
+    img: 'static/images/trivia-min.png',
     url: 'https://github.com/saloiofun/TriviaGame',
     cols: 1
   },
   {
-    img: 'static/images/rps.png',
+    img: 'static/images/rps-min.png',
     url: 'https://github.com/saloiofun/RPS-Multiplayer',
     cols: 1
   }
