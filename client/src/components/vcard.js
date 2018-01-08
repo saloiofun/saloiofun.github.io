@@ -15,12 +15,17 @@ const styles = theme => ({
     marginTop: theme.spacing.unit * 3
   },
   rounded: {
-    borderRadius: 8
+    borderRadius: 8,
+    paddingBottom: theme.spacing.unit
   },
   content: {
     [theme.breakpoints.up('md')]: {
       padding: 40
     }
+  },
+  name: {
+    fontSize: '1.2rem',
+    margin: '0 3px'
   },
   social: {
     marginTop: theme.spacing.unit * 2,
@@ -37,6 +42,34 @@ const styles = theme => ({
   }
 })
 
+const socialMedia = [
+  {
+    social: 'Github',
+    icon: Github,
+    url: 'https://github.com/saloiofun'
+  },
+  {
+    social: 'LinkedIn',
+    icon: Linkedin,
+    url: 'https://www.linkedin.com/in/sandrowong/'
+  }
+]
+
+let socialMedias = socialMedia.map(sm => {
+  var CompName = sm.icon
+  return (
+    <Tooltip
+      id={sm.social}
+      title={sm.social}
+      placement='bottom'
+    >
+      <Button mini href={sm.url} target='_blank' fab color='primary' aria-labelledby={sm.social} style={{margin: 8}}>
+        <CompName />
+      </Button>
+    </Tooltip>
+  )
+})
+
 function Vcard (props) {
   const { classes } = props
 
@@ -49,37 +82,18 @@ function Vcard (props) {
           <Grid container spacing={24}>
             <Grid item xs={12} md={7}>
               <Typography type='display3'>
-                Hi
+                Hi!
               </Typography>
-              <Typography type='body1'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              <Typography type='body2'>
+              I'm <span className={classes.name}>Sandro Wong</span> and I'm passionate about Web Development. I recently graduated from a 6 months Coding Bootcamp and I'm eager to put my skills in practice. Throughout the years, I've earned a reputation for quality and efficiency in customer satisfaction, communication, and problem resolution. I'm a fast learner, team player, and hard worker, able to build a sophisticated website with full database backend all the way from mockup to rollout.
               </Typography>
               <div className={classes.social}>
-                <Tooltip
-                  id='github'
-                  title='Github'
-                  target='_blank'
-                  placement='bottom'
-                >
-                  <Button mini href={props.githubLocation} fab color='primary' aria-labelledby='github' className={classes.button}>
-                    <Github />
-                  </Button>
-                </Tooltip>
-                <Tooltip
-                  id='linkedin'
-                  title='LinkedIn'
-                  target='_blank'
-                  placement='bottom'
-                >
-                  <Button mini href={props.githubLocation} fab color='primary' aria-labelledby='linkedin' className={classes.button}>
-                    <Linkedin />
-                  </Button>
-                </Tooltip>
+                {socialMedias}
               </div>
             </Grid>
             <Grid item xs={12} md={5}>
               <div className={classes.image}>
-                <img src='https://api.adorable.io/avatars/285/sandrowong' alt='avatar' />
+                <img src='/static/images/me.jpg' alt='avatar' style={{width: 285}} />
               </div>
             </Grid>
           </Grid>
