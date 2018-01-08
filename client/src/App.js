@@ -9,7 +9,6 @@ import Education from './components/education'
 import ProfessionalSkills from './components/professionalSkills'
 import Interests from './components/interests'
 import Typography from 'material-ui/Typography'
-import HeartBox from 'mdi-material-ui/HeartBox'
 
 const styles = theme => ({
   root: {
@@ -47,6 +46,9 @@ class App extends Component {
           <div className={classes.divider} />
           <Interests />
           <div className={classes.divider} />
+          <Typography type='subheading' gutterBottom align='right'>
+            {`<BuiltWithLove />`}
+          </Typography>
         </div>
       </div>
     )
