@@ -7,8 +7,8 @@ import Typography from 'material-ui/Typography'
 import Grid from 'material-ui/Grid'
 import Tooltip from 'material-ui/Tooltip'
 
-import Github from './github'
-import Linkedin from './linkedin'
+import Github from 'mdi-material-ui/GithubCircle'
+import Linkedin from 'mdi-material-ui/Linkedin'
 
 const styles = theme => ({
   root: {
