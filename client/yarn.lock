@@ -4208,6 +4208,18 @@ md5.js@^1.3.4:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
+mdi-material-ui@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/mdi-material-ui/-/mdi-material-ui-3.0.1.tgz#26f37866f6ad60ff47d512deb36fd7d13c3fb358"
+
+mdi-svg@^2.1.19:
+  version "2.1.19"
+  resolved "https://registry.yarnpkg.com/mdi-svg/-/mdi-svg-2.1.19.tgz#e4bd226a89594ff4903727b45c196e355fde6a88"
+
+mdi@^2.1.19:
+  version "2.1.19"
+  resolved "https://registry.yarnpkg.com/mdi/-/mdi-2.1.19.tgz#492bfc0c4fd0c510ebd55301cc76eb03a7a2f34b"
+
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
