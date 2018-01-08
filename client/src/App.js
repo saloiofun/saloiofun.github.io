@@ -7,6 +7,7 @@ import Resume from './components/resume'
 import Portfolio from './components/portfolio'
 import WorkExperience from './components/workExperience'
 import Education from './components/education'
+import ProfessionalSkills from './components/professionalSkills'
 import Interests from './components/interests'
 
 const styles = theme => ({
@@ -41,6 +42,8 @@ class App extends Component {
           <WorkExperience />
           <div className={classes.divider} />
           <Education />
+          <div className={classes.divider} />
+          <ProfessionalSkills />
           <div className={classes.divider} />
           <Interests />
         </div>
