@@ -22,29 +22,18 @@ const styles = theme => ({
 
 const tileData = [
   {
+    year: '2017',
+    title: 'University of California, Irvine',
+    description: `Certificate in Full-Stack Web Development.`
+  },
+  {
     year: '2016',
-    title: 'Image',
-    description: `For each ad campaign that you create, you can control how much
-    you're willing to spend on clicks and conversions, which networks
-    and geographical locations you want your ads to show on, and more.`
-  },
-  {
-    year: '2014',
-    title: 'Image',
-    description: `For each ad campaign that you create, you can control how much
-    you're willing to spend on clicks and conversions, which networks
-    and geographical locations you want your ads to show on, and more.`
-  },
-  {
-    year: '2010',
-    title: 'Image',
-    description: `For each ad campaign that you create, you can control how much
-    you're willing to spend on clicks and conversions, which networks
-    and geographical locations you want your ads to show on, and more.`
+    title: 'California State Polytechnic University, Pomona, CA',
+    description: `B.S. Business Administration with a concentration in Computer Information Systems.`
   }
 ]
 
-function WorkExperience (props) {
+function Education (props) {
   const { classes } = props
   return (
     <div>
@@ -71,8 +60,8 @@ function WorkExperience (props) {
   )
 }
 
-WorkExperience.propTypes = {
+Education.propTypes = {
   classes: PropTypes.object.isRequired
 }
 
-export default withStyles(styles)(WorkExperience)
+export default withStyles(styles)(Education)
