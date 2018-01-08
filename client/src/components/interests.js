@@ -60,11 +60,11 @@ function Interests (props) {
   const { classes } = props
   return (
     <div>
-      <Typography type='display2' align='left' gutterBottom='true'>
+      <Typography type='display2' align='left' gutterBottom>
           Interests
       </Typography>
       <Paper className={classes.root} elevation={4}>
-        <Typography gutterBottom='true'>
+        <Typography gutterBottom>
           For each ad campaign that you create, you can control how much you're willing to spend on clicks and conversions, which networks and geographical locations you want your ads to show on, and more.
         </Typography>
         <div className={classes.interests}>

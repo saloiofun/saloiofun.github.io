@@ -55,18 +55,18 @@ const tileData = [
   }
 ]
 
-let skills = tileData.map(skill => {
-  var CompName = skill.icon
+let skills = tileData.map(sk => {
+  var CompName = sk.icon
   return (
-    <Grid item xs={12} md={4}>
+    <Grid item xs={12} md={4} key={sk.skill}>
       <ListItem>
         <ListItemIcon>
-          <CompName key={skill.skill} style={{
+          <CompName key={sk.skill} style={{
             marginRight: 0
           }} />
         </ListItemIcon>
         <ListItemText
-          primary={skill.skill}
+          primary={sk.skill}
         />
       </ListItem>
     </Grid>
@@ -77,11 +77,11 @@ function ProfessionalSkills (props) {
   const { classes } = props
   return (
     <div>
-      <Typography type='display2' align='left' gutterBottom='true'>
+      <Typography type='display2' align='left' gutterBottom>
           Professional Skills
       </Typography>
       <Paper className={classes.root} elevation={4}>
-        <Typography gutterBottom='true'>
+        <Typography gutterBottom>
           For each ad campaign that you create, you can control how much you're willing to spend on clicks and conversions, which networks and geographical locations you want your ads to show on, and more.
         </Typography>
         <div className={classes.ProfessionalSkills}>

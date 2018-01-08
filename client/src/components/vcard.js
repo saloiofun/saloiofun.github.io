@@ -62,6 +62,7 @@ let socialMedias = socialMedia.map(sm => {
       id={sm.social}
       title={sm.social}
       placement='bottom'
+      key={sm.social}
     >
       <Button mini href={sm.url} target='_blank' fab color='primary' aria-labelledby={sm.social} style={{margin: 8}}>
         <CompName />

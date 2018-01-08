@@ -37,7 +37,7 @@ function Education (props) {
   const { classes } = props
   return (
     <div>
-      <Typography type='display2' align='left' gutterBottom='true'>
+      <Typography type='display2' align='left' gutterBottom>
           Education
         </Typography>
       <Paper className={classes.root} elevation={4}>
@@ -45,9 +45,12 @@ function Education (props) {
           {tileData.map((item, index) => (
             <div key={index}>
               <Typography type='title'>
-                {item.year} - {item.title}
+                {item.year}
               </Typography>
               <div className={classes.description}>
+                <Typography type='headline' gutterBottom>
+                  {item.title}
+                </Typography>
                 <Typography>
                   {item.description}
                 </Typography>

@@ -63,7 +63,7 @@ function Portfolio (props) {
 
   return (
     <div>
-      <Typography type='display2' align='left' gutterBottom='true'>
+      <Typography type='display2' align='left' gutterBottom>
         Portfolio
       </Typography>
       <div className={classes.images}>

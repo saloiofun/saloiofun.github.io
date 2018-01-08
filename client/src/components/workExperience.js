@@ -22,25 +22,29 @@ const styles = theme => ({
 
 const tileData = [
   {
-    year: '2016',
-    title: 'Image',
-    description: `For each ad campaign that you create, you can control how much
-    you're willing to spend on clicks and conversions, which networks
-    and geographical locations you want your ads to show on, and more.`
+    year: '2016 - Present',
+    title: 'McGraw-Hill Education',
+    subtitle: 'QA Specialist I',
+    description: [
+      `Test legacy and new test cases with the use of formal test cases or scripts.`,
+      `Create automation testing framework using Selenium Webdriver with Java programming language.`,
+      `Execute smoke, regression and functional tests.`,
+      `Interpret test cases, compare them to established specifications.`,
+      `Performance to go beyond the specification and anticipate problem areas in the product design and document test cases results and compare to expected results.`,
+      `Work in an Agile Team with developers to ensure the quality of the projects.`
+    ]
   },
   {
-    year: '2014',
-    title: 'Image',
-    description: `For each ad campaign that you create, you can control how much
-    you're willing to spend on clicks and conversions, which networks
-    and geographical locations you want your ads to show on, and more.`
-  },
-  {
-    year: '2010',
-    title: 'Image',
-    description: `For each ad campaign that you create, you can control how much
-    you're willing to spend on clicks and conversions, which networks
-    and geographical locations you want your ads to show on, and more.`
+    year: '2014-2016',
+    title: 'California State Polytechnic University, Pomona',
+    subtitle: 'Graduate Assistant',
+    description: [
+      `Helped graduate student in Educational Multimedia Program.`,
+      `Maintained and upkept of the lab facilities, provided software and hardware support, and furnished instructional assistance to students, faculty, and staff.`,
+      `Administrated, supported and troubleshot 28 workstations including desktop units, tablets, monitors, local and networked printers, network and other communication devices associated with all desktop hardware.`,
+      `Assisted in following-up and analyzing projects.`,
+      `Diagnosed and troubleshoot problems, determined solutions to resolve the issues on site.`
+    ]
   }
 ]
 
@@ -48,7 +52,7 @@ function WorkExperience (props) {
   const { classes } = props
   return (
     <div>
-      <Typography type='display2' align='left' gutterBottom='true'>
+      <Typography type='display2' align='left' gutterBottom>
           Work Experience
       </Typography>
       <Paper className={classes.root} elevation={4}>
@@ -56,12 +60,18 @@ function WorkExperience (props) {
           {tileData.map((item, index) => (
             <div key={index}>
               <Typography type='title'>
-                {item.year} - {item.title}
+                {item.year}
               </Typography>
               <div className={classes.description}>
-                <Typography>
-                  {item.description}
+                <Typography type='headline'>
+                  {item.title}
                 </Typography>
+                <Typography type='subheading' gutterBottom>
+                  {item.subtitle}
+                </Typography>
+                {item.description.map((desc, i) => (
+                  <Typography key={i} gutterBottom>- {desc}</Typography>
+                ))}
               </div>
             </div>
         ))}
