@@ -24,7 +24,7 @@ function Resume (props) {
   const { classes } = props
   return (
     <div className={classes.root}>
-      <Button href={props.href} className={classes.button} raised color='primary'>
+      <Button href='static/files/sandro_wong_resume.pdf' download className={classes.button} raised color='primary'>
         Download Resume
         <FileDownload className={classes.rightIcon} />
       </Button>
