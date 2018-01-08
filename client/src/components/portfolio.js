@@ -21,37 +21,37 @@ const styles = theme => ({
 
 const tileData = [
   {
-    img: 'http://lorempixel.com/200/220/sports/',
+    img: 'static/images/evitehub.png',
     title: 'Image',
     author: 'author',
     cols: 2
   },
   {
-    img: 'http://lorempixel.com/300/220/sports/',
+    img: 'static/images/rps.png',
     title: 'Image',
     author: 'author',
     cols: 1
   },
   {
-    img: 'http://lorempixel.com/370/150/sports/',
+    img: 'static/images/rpg.png',
     title: 'Image',
     author: 'author',
     cols: 1
   },
   {
-    img: 'http://lorempixel.com/400/200/sports/',
+    img: 'static/images/hangman.jpg',
     title: 'Image',
     author: 'author',
     cols: 1
   },
   {
-    img: 'http://lorempixel.com/300/200/sports/',
+    img: 'static/images/trivia.jpg',
     title: 'Image',
     author: 'author',
     cols: 1
   },
   {
-    img: 'http://lorempixel.com/600/110/sports/',
+    img: 'static/images/gifstatic.png',
     title: 'Image',
     author: 'author',
     cols: 3
