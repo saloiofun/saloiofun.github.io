@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 import { withStyles } from 'material-ui/styles'
 import Typography from 'material-ui/Typography'
 import { GridList, GridListTile, GridListTileBar } from 'material-ui/GridList'
@@ -16,9 +17,12 @@ const styles = theme => ({
   },
   image: {
     height: '100%',
-    left: '50%',
+    left: '-5.5%',
     position: 'relative',
-    transform: 'translateX(-50%)'
+    transform: 'translateX(-10%)',
+    [theme.breakpoints.up('md')]: {
+      transform: 'none'
+    }
   },
   title: {
     fontWeight: 500,
@@ -27,6 +31,11 @@ const styles = theme => ({
   titleBar: {
     background:
       'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)'
+  },
+  grow: { transition: 'all .2s ease-in-out',
+    '&:hover': {
+      transform: 'scale(1.1)'
+    }
   }
 })
 
@@ -84,7 +93,7 @@ function Portfolio (props) {
             <GridListTile key={tile.img} cols={tile.cols || 1}>
               <div style={{height: '100%'}}>
                 <a href={tile.url} target='_blank'>
-                  <img className={classes.image} src={tile.img} alt={tile.title} />
+                  <img className={classNames(classes.image, classes.grow)} src={tile.img} alt={tile.title} />
                   <GridListTileBar
                     title={tile.title}
                     classes={{
