@@ -65,7 +65,9 @@ let skills = tileData.map(sk => {
   var CompName = sk.icon
   return (
     <Grid item xs={12} md={4} key={sk.skill}>
-      <ListItem>
+      <ListItem style={{
+        padding: '0 16px'
+      }}>
         <ListItemIcon>
           <CompName key={sk.skill} style={{
             width: 30,
