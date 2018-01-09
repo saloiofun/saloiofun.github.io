@@ -31,26 +31,32 @@ const styles = theme => ({
 const tileData = [
   {
     icon: LanguageHtml5,
+    fill: 'rgb(241,101,40)',
     skill: 'HTML5'
   },
   {
     icon: LanguageCss3,
+    fill: 'rgb(38,77,228)',
     skill: 'CSS3'
   },
   {
     icon: LanguageJavascript,
+    fill: 'rgb(247,223,30)',
     skill: 'JavaScript'
   },
   {
     icon: Nodejs,
+    fill: 'rgb(128,189,1)',
     skill: 'Node.js'
   },
   {
     icon: Reactjs,
+    fill: 'rgb(74,213,255)',
     skill: 'ReactJS'
   },
   {
     icon: Database,
+    fill: 'rgb(94,135,161)',
     skill: 'MongoDB & MySQL'
   }
 ]
@@ -62,7 +68,10 @@ let skills = tileData.map(sk => {
       <ListItem>
         <ListItemIcon>
           <CompName key={sk.skill} style={{
-            marginRight: 0
+            width: 30,
+            height: 30,
+            marginRight: 0,
+            fill: `${sk.fill}`
           }} />
         </ListItemIcon>
         <ListItemText
