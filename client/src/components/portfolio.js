@@ -26,7 +26,9 @@ const styles = theme => ({
   },
   title: {
     fontWeight: 500,
-    fontSize: '1.5rem'
+    fontSize: '1.5rem',
+    marginBottom: 10,
+    whiteSpace: 'normal'
   },
   titleBar: {
     background:
@@ -43,38 +45,42 @@ const tileData = [
   {
     img: 'static/images/evitehub-min.png',
     title: 'EviteHub',
-    url: 'https://github.com/saloiofun/EviteHub',
-    cols: 1
+    url: 'https://github.com/saloiofun/EviteHub'
   },
   {
     img: 'static/images/gifstatic-min.png',
     title: 'GifTastic',
-    url: 'https://github.com/saloiofun/GifTastic',
-    cols: 1
+    url: 'https://github.com/saloiofun/GifTastic'
   },
   {
     img: 'static/images/rpg-min.png',
-    title: 'RPG-Game',
-    url: 'https://github.com/saloiofun/RPG-game',
-    cols: 1
+    title: 'RPG Game',
+    url: 'https://github.com/saloiofun/RPG-game'
   },
   {
     img: 'static/images/hangman-min.png',
     title: 'Hangman',
-    url: 'https://github.com/saloiofun/Hangman-Game',
-    cols: 1
+    url: 'https://github.com/saloiofun/Hangman-Game'
   },
   {
     img: 'static/images/trivia-min.png',
-    title: 'TriviaGame',
-    url: 'https://github.com/saloiofun/TriviaGame',
-    cols: 1
+    title: 'Trivia Game',
+    url: 'https://github.com/saloiofun/TriviaGame'
   },
   {
     img: 'static/images/rps-min.png',
-    title: 'RPS-Game',
-    url: 'https://github.com/saloiofun/RPS-Multiplayer',
-    cols: 1
+    title: 'RPS Game',
+    url: 'https://github.com/saloiofun/RPS-Multiplayer'
+  },
+  {
+    img: 'static/images/ichikawa-min.png',
+    title: 'Ichikawa Shabu',
+    url: 'http://ichikawashabu.com/'
+  },
+  {
+    img: 'static/images/nextbitusa-min.png',
+    title: 'NextBit USA',
+    url: 'http://nextbitusa.com/'
   }
 ]
 
@@ -90,7 +96,7 @@ function Portfolio (props) {
         <GridList cellHeight={260} className={classes.gridList} cols={2}>
           {tileData.map(tile => (
 
-            <GridListTile key={tile.img} cols={tile.cols || 1}>
+            <GridListTile key={tile.img} cols={1}>
               <div style={{height: '100%'}}>
                 <a href={tile.url} target='_blank'>
                   <img className={classNames(classes.image, classes.grow)} src={tile.img} alt={tile.title} />
