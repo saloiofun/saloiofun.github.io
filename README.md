@@ -9,5 +9,5 @@ Link: https://sandro-wong.herokuapp.com/
 * JavaScript
 * [React.js](https://reactjs.org/)
 * [Material-UI](http://www.material-ui.com)
-* [MongoDB](www.mongodb.com)
+* [MongoDB](www.mongodb.com) (on going)
 * [Node.js](https://nodejs.org/)
