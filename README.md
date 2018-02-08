@@ -1,6 +1,6 @@
 # Portfolio
 
-Link: https://sandro-wong.herokuapp.com/
+Link: [https://sandro-wong.herokuapp.com/](https://sandro-wong.herokuapp.com/)
 
 ## Tools used
 
