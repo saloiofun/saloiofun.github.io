@@ -65,7 +65,7 @@ function Interests (props) {
       </Typography>
       <Paper className={classes.root} elevation={4}>
         <Typography gutterBottom>
-        Besides my passion on coding, I love watching TV Shows and Movies, hangout with friends, and exercise. I haven’t been playing video games lately, but I enjoy watching the highlights on YouTube and tournaments on Twitch.
+        Besides my passion for coding, I love watching TV Shows and Movies, hanging out with friends, and exercising. I haven’t been playing video games lately, but I enjoy watching highlights on YouTube and tournaments on Twitch.
         </Typography>
         <div className={classes.interests}>
           {tileData.map((item, index) => (
