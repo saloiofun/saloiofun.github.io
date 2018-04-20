@@ -81,16 +81,6 @@ const tileData = [
     img: 'static/images/nextbitusa-min.png',
     title: 'NextBit USA',
     url: 'http://nextbitusa.com/'
-  },
-  {
-    img: 'static/images/mbcotc-min.png',
-    title: 'MBCOTC',
-    url: 'http://en.mbcotc.org/'
-  },
-  {
-    img: 'static/images/socalled-min.png',
-    title: 'Socal-LED Lighting',
-    url: 'https://www.socalledlighting.com/'
   }
 ]
 
