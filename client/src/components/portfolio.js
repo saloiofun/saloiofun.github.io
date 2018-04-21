@@ -84,13 +84,13 @@ const tileData = [
   },
   {
     img: 'static/images/mbcotc-min.png',
-    title: 'Ichikawa Shabu',
-    url: 'http://ichikawashabu.com/'
+    title: 'MBCOTC',
+    url: 'http://en.mbcotc.org/'
   },
   {
     img: 'static/images/socalled-min.png',
-    title: 'NextBit USA',
-    url: 'http://nextbitusa.com/'
+    title: 'Socal-LED Lighting',
+    url: 'https://www.socalledlighting.com/'
   }
 ]
 
