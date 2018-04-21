@@ -81,6 +81,16 @@ const tileData = [
     img: 'static/images/nextbitusa-min.png',
     title: 'NextBit USA',
     url: 'http://nextbitusa.com/'
+  },
+  {
+    img: 'static/images/mbcotc-min.png',
+    title: 'Ichikawa Shabu',
+    url: 'http://ichikawashabu.com/'
+  },
+  {
+    img: 'static/images/socalled-min.png',
+    title: 'NextBit USA',
+    url: 'http://nextbitusa.com/'
   }
 ]
 
