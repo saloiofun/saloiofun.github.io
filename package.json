@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage" : "https://sandro-wong.herokuapp.com/",
   "version": "1.0.0",
   "description": "Sandro Wong - Full Stack Developer",
   "main": "server.js",
@@ -30,7 +31,6 @@
   "bugs": {
     "url": "https://github.com/saloiofun/saloiofun.github.io/issues"
   },
-  "homepage": "https://github.com/saloiofun/saloiofun.github.io#readme",
   "devDependencies": {
     "concurrently": "^3.5.1",
     "nodemon": "^1.14.7"
