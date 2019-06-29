@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage" : "https://sandro-wong.herokuapp.com/",
+  "homepage": "https://sandro-wong.herokuapp.com/",
   "version": "1.0.0",
   "description": "Sandro Wong - Full Stack Developer",
   "main": "server.js",

@@ -82,7 +82,7 @@ function Vcard (props) {
                 Hi!
               </Typography>
               <Typography type='body2'>
-              I'm <span className={classes.name}>Sandro Wong</span> and I'm passionate about Web Development. I recently graduated from a 6 month Coding Bootcamp learning Full Stack Web Development and I'm eager to apply the knowledge and skills I have aquired into practice. Throughout the years, I've earned a reputation for quality and efficiency in customer satisfaction, communication, and problem resolution. I'm a fast learner, team player, and a hard worker. I am able to build a sophisticated website with full database backend from mockup to rollout.
+              I'm <span className={classes.name}>Sandro Wong</span> and I'm passionate about Web Development. Throughout the years, I've earned a reputation for quality and efficiency in customer satisfaction, communication, and problem resolution. I'm a fast learner, team player, and a hard worker. I am able to build a sophisticated website with full database backend from mockup to rollout.
               </Typography>
               <div className={classes.social}>
                 {socialMedias}

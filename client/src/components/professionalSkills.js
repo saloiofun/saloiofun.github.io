@@ -9,7 +9,15 @@ import {
   ListItemIcon,
   ListItemText
 } from 'material-ui/List'
-import { LanguageHtml5, LanguageCss3, LanguageJavascript, Nodejs, React as Reactjs, Database } from 'mdi-material-ui'
+import {
+  Angular,
+  Database,
+  LanguageCss3,
+  LanguageHtml5,
+  LanguageJavascript,
+  Nodejs,
+  React as Reactjs,
+} from 'mdi-material-ui'
 
 const styles = theme => ({
   root: theme.mixins.gutters({
@@ -48,6 +56,11 @@ const tileData = [
     icon: Nodejs,
     fill: 'rgb(128,189,1)',
     skill: 'Node.js'
+  },
+  {
+    icon: Angular,
+    fill: 'rgb(220,49,53)',
+    skill: 'Angular'
   },
   {
     icon: Reactjs,

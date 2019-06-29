@@ -22,7 +22,22 @@ const styles = theme => ({
 
 const tileData = [
   {
-    year: '2016 - Present',
+    year: '2018 - Present',
+    title: 'McGraw-Hill Education',
+    subtitle: 'Software Engineer',
+    description: [
+      `Hands-on software development using HTML5, CSS3, JavaScript including SASS/LESS, ES6, modern frameworks and third party/open-source libraries.`,
+      `Cross discipline advocate who can ensure on-time delivery across engineering, user experience, product management, system administration, and release management.`,
+      `Research technology issues and work with teams staff to understand and resolve challenges`,
+      `Work collaboratively with Product Management and PMO to define scope`,
+      `Prototype with emerging technologies to prove product feature sets and enhance SDLC`,
+      `Drive the adoption of conventions and best practices for front-end development`,
+      `Improve user experience and provide elegant and performant interfaces to the customers`,
+      `Participate in system designs and code review`
+    ]
+  },
+  {
+    year: '2016 - 2018',
     title: 'McGraw-Hill Education',
     subtitle: 'QA Specialist I',
     description: [
