@@ -2,6 +2,9 @@
   "name": "portfolio",
   "homepage": "https://sandro-wong.herokuapp.com/",
   "version": "1.0.0",
+  "engines": {
+    "yarn": "1.16.0"
+  },
   "description": "Sandro Wong - Full Stack Developer",
   "main": "server.js",
   "scripts": {
@@ -9,7 +12,7 @@
     "client": "cd client && npm run start",
     "start": "concurrently \"node server.js\" \"npm run client\"",
     "build": "cd client && npm run build",
-    "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
+    "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master -f",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

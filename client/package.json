@@ -2,6 +2,9 @@
   "name": "portfolio",
   "homepage" : "https://sandro-wong.herokuapp.com/",
   "version": "0.1.0",
+  "engines": {
+    "node": "10.12.0"
+  },
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
