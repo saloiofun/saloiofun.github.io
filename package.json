@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://sandro-wong.herokuapp.com/",
+  "homepage": "http://sandrowong.io/",
   "version": "2.0.0",
   "engines": {
     "node": "10.12.0",
@@ -14,6 +14,7 @@
     "@types/node": "12.0.10",
     "@types/react": "16.8.22",
     "@types/react-dom": "16.8.4",
+    "gh-pages": "^2.0.1",
     "mdi-material-ui": "^6.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -21,9 +22,10 @@
     "typescript": "3.5.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
+    "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
