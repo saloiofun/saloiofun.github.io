@@ -104,7 +104,7 @@ export default function ProfessionalSkills() {
       </Typography>
       <Paper className={classes.root} elevation={4}>
         <Typography gutterBottom>
-          I’m constantly learning and polishing my coding style. You can see a more extended list of my professional skills in my Resume. Below are the tools that I’ve been using lately.
+          I’m constantly learning and polishing my coding style. Below are the tools that I’ve been using lately.
         </Typography>
         <div>
           <Grid container justify='center'>

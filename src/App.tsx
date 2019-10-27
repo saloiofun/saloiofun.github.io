@@ -6,7 +6,6 @@ import Interests from './components/interests';
 import Portfolio from './components/portfolio';
 import Intro from './components/intro';
 import { Container, Typography } from '@material-ui/core';
-import Resume from './components/resume';
 import { makeStyles } from '@material-ui/core/styles';
 
 const styles = makeStyles(theme => ({
@@ -21,7 +20,6 @@ const App: React.FC = () => {
   return (
     <Container className={classes.root} maxWidth="md">
       <Intro />
-      <Resume />
       <Portfolio />
       <WorkExperience />
       <Education />
