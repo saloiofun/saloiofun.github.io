@@ -9,3 +9,5 @@ Link: [http://sandrowong.io/](http://sandrowong.io/)
 * JavaScript
 * [React.js](https://reactjs.org/)
 * [Material-UI](http://www.material-ui.com)
+
+https://create-react-app.dev/docs/deployment#github-pages
