@@ -1,7 +1,7 @@
 import { Card, CardContent, Fab, Grid, Tooltip, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import Github from 'mdi-material-ui/GithubCircle';
-import Linkedin from 'mdi-material-ui/Linkedin';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import React from 'react';
 
 const styles = makeStyles(theme => ({
@@ -36,18 +36,18 @@ const styles = makeStyles(theme => ({
 const socialMedia = [
   {
     social: 'Github',
-    icon: Github,
+    icon: GitHubIcon,
     url: 'https://github.com/saloiofun'
   },
   {
     social: 'LinkedIn',
-    icon: Linkedin,
+    icon: LinkedInIcon,
     url: 'https://www.linkedin.com/in/sandrowong/'
   }
 ]
 
 let socialMedias = socialMedia.map(sm => {
-  var CompName = sm.icon
+  const CompName = sm.icon
   return (
     <Tooltip
       aria-label={sm.social}
