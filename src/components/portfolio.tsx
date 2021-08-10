@@ -70,12 +70,12 @@ const tileData = [
   {
     img: 'static/images/ichikawa-min.png',
     title: 'Ichikawa Shabu',
-    url: 'http://ichikawashabu.com/'
+    url: 'http://web.archive.org/web/20201129164220/http://ichikawashabu.com/'
   },
   {
     img: 'static/images/nextbitusa-min.png',
     title: 'NextBit USA',
-    url: 'http://nextbitusa.com/'
+    url: 'http://web.archive.org/web/20200219150231/http://nextbitusa.com/'
   },
   {
     img: 'static/images/mbcotc-min.png',
