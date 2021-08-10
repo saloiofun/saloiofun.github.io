@@ -1,6 +1,6 @@
 # Portfolio
 
-Link: [http://sandrowong.io/](http://sandrowong.io/)
+Link: [http://sandrowong.dev/](http://sandrowong.dev/)
 
 ## Tools used
 
